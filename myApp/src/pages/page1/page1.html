@@ -3,16 +3,58 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Page One</ion-title>
+    <ion-title>Edyulus</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <h3>Admission</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <ion-item>
+    <ion-label fixed>First Name</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed>Middle Name</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+<ion-item>
+    <ion-label fixed>Last Name</ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Gender</ion-label>
+    <ion-select > 
+      <ion-option >Male</ion-option>
+      <ion-option >Female</ion-option>
+      <ion-option >Other</ion-option>
+      
+    </ion-select>
+  </ion-item>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <ion-item>
+    <ion-label>Admitting to</ion-label>
+    <ion-select > 
+      <ion-option *ngFor="let class of classList" value={{class.id}}>{{ class.class_name }}</ion-option>
+         
+    </ion-select>
+  </ion-item>
+  <ion-item>
+  <ion-label>Start Time</ion-label>
+  <ion-datetime displayFormat="MMM DD YYYY" ></ion-datetime>
+</ion-item>
+ 
+<button ion-button>Submit</button>
+
+
+
+
+  <!--<ion-item>
+    <ion-label fixed>Password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>-->
+
+
+
+  
 </ion-content>
