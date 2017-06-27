@@ -1,4 +1,4 @@
-import { Component, Provider } from '@angular/core';
+import { Component, Provider,Input } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 import { CLassDetails ,Student} from './admission';
@@ -11,7 +11,7 @@ import { AdmissionService } from './admission.service';
 })
 export class Page1 {
   classList :CLassDetails[];
-  student : Student;
+  student = new Student();
 
   constructor(public navCtrl: NavController, private addService: AdmissionService) {
 
@@ -22,6 +22,9 @@ export class Page1 {
   getClass():void{
     this.addService.getClass().then(classList => this.classList = classList);
    
+  }
+  saveData():void{
+    console.log(this.addService.updateStudent(this.student))
   }
 
 }

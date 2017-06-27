@@ -13,7 +13,7 @@ export class AdmissionService {
     private base_url = 'http://localhost:8000/';
 
     private get_class = this.base_url + 'admission/get_class/';  // URL to web api
-    private save_student = this.base_url + 'api/save_student';  // URL to web api
+    private save_student = this.base_url + 'admission/save_data/';  // URL to web api
 
     private headers = new Headers({'Content-Type': 'application/json'});
 
@@ -35,11 +35,20 @@ export class AdmissionService {
     updateStudent(student: Student): Promise<Student> {
         const url = this.save_student;
         return this.http
-            .put(url, JSON.stringify(student), {headers: this.headers})
+            .post(url, JSON.stringify(student), {headers: this.headers})
             .toPromise()
-            .then(() => student)
+            .then(this.extractData)
             .catch(this.handleError);
 }
+
+
+    private extractData(res: Response) {
+        let body = res.json();
+            return body.data || { };
+
+            
+            }
+
 
 
 

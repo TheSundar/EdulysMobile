@@ -1,0 +1,321 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title>
+      Events
+    </ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="all">
+        ALL
+      </ion-segment-button>
+      <ion-segment-button value="homeworks">
+        Homeworks
+      </ion-segment-button>
+      <ion-segment-button value="events">
+        Events
+      </ion-segment-button>
+      <ion-segment-button value="exams">
+        Exams
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'all'">
+      <ion-card>
+
+      <ion-item>
+        
+        <h2>English : Learn Ryms</h2>
+        <p>April 17, 2017</p>
+      </ion-item>
+
+      
+
+      <ion-card-content>
+        <p>Please Learn Johnny,Johnny Rhyme</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <div>Assigned</div>
+          </button>
+        </ion-col>
+      
+        <ion-col bottom text-right>
+          <ion-note>
+            10h ago
+          </ion-note>
+        </ion-col>
+      </ion-row>
+
+</ion-card>
+ <ion-card>
+
+      <ion-item>
+        
+        <h2>Maths : Write 2 to 10 Tables</h2>
+        <p>April 16, 2017</p>
+      </ion-item>
+
+      
+
+      <ion-card-content>
+        <p>Please create tables from 2 to 10</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>Completed</div>
+          </button>
+        </ion-col>
+      
+        <ion-col bottom text-right>
+          <ion-note>
+            11h ago
+          </ion-note>
+        </ion-col>
+      </ion-row>
+
+</ion-card>
+ <ion-card>
+
+      <ion-item>
+        
+        <h2>Social : Learn about Kuli-kutub Shah</h2>
+        <p>April 15, 2017</p>
+      </ion-item>
+
+      
+
+      <ion-card-content>
+        <p>Please LearnKuli-kutub Shah,Charminar</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>Completed</div>
+          </button>
+        </ion-col>
+      
+        <ion-col bottom text-right>
+          <ion-note>
+            11h ago
+          </ion-note>
+        </ion-col>
+      </ion-row>
+
+</ion-card>
+ <ion-card>
+
+      <ion-item>
+        
+        <h2>English : Learn Ryms</h2>
+        <p>April 17, 2017</p>
+      </ion-item>
+
+      
+
+      <ion-card-content>
+        <p>Please Learn Johnny,Johnny Rhyme</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>Completed</div>
+          </button>
+        </ion-col>
+      
+        <ion-col bottom text-right>
+          <ion-note>
+            11h ago
+          </ion-note>
+        </ion-col>
+      </ion-row>
+
+</ion-card>
+ <ion-card>
+
+      <ion-item>
+        
+        <h2>English : Learn Ryms</h2>
+        <p>April 17, 2017</p>
+      </ion-item>
+
+      
+
+      <ion-card-content>
+        <p>Please Learn Johnny,Johnny Rhyme</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>Completed</div>
+          </button>
+        </ion-col>
+      
+        <ion-col bottom text-right>
+          <ion-note>
+            11h ago
+          </ion-note>
+        </ion-col>
+      </ion-row>
+
+</ion-card>
+ <ion-card>
+
+      <ion-item>
+        
+        <h2>English : Learn Ryms</h2>
+        <p>April 17, 2017</p>
+      </ion-item>
+
+      
+
+      <ion-card-content>
+        <p>Please Learn Johnny,Johnny Rhyme</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>Completed</div>
+          </button>
+        </ion-col>
+      
+        <ion-col bottom text-right>
+          <ion-note>
+            11h ago
+          </ion-note>
+        </ion-col>
+      </ion-row>
+
+</ion-card>
+ <ion-card>
+
+      <ion-item>
+        
+        <h2>English : Learn Ryms</h2>
+        <p>April 17, 2017</p>
+      </ion-item>
+
+      
+
+      <ion-card-content>
+        <p>Please Learn Johnny,Johnny Rhyme</p>
+      </ion-card-content>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>Completed</div>
+          </button>
+        </ion-col>
+      
+        <ion-col bottom text-right>
+          <ion-note>
+            11h ago
+          </ion-note>
+        </ion-col>
+      </ion-row>
+
+</ion-card>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'homeworks'">
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/thumbnail-kitten-1.jpg">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/thumbnail-kitten-3.jpg">
+        </ion-thumbnail>
+        <h2>Milo</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/thumbnail-kitten-4.jpg">
+        </ion-thumbnail>
+        <h2>Bandit</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/thumbnail-kitten-2.jpg">
+        </ion-thumbnail>
+        <h2>Nala</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'events'">
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/thumbnail-duckling-1.jpg">
+        </ion-thumbnail>
+        <h2>Daffy</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/thumbnail-duckling-2.jpg">
+        </ion-thumbnail>
+        <h2>Huey</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/thumbnail-duckling-3.jpg">
+        </ion-thumbnail>
+        <h2>Dewey</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>Louie</h2>
+      </ion-item>
+    </ion-list>
+      <ion-list *ngSwitchCase="'exams'">
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/thumbnail-kitten-1.jpg">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/thumbnail-kitten-3.jpg">
+        </ion-thumbnail>
+        <h2>Milo</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/thumbnail-kitten-4.jpg">
+        </ion-thumbnail>
+        <h2>Bandit</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-left>
+          <img src="assets/img/thumbnail-kitten-2.jpg">
+        </ion-thumbnail>
+        <h2>Nala</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+

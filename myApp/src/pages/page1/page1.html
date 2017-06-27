@@ -12,7 +12,8 @@
 
   <ion-item>
     <ion-label fixed>First Name</ion-label>
-    <ion-input type="text" ></ion-input>
+    <ion-input [(ngModel)]="student.st_fn" type="text" ></ion-input>
+    
   </ion-item>
   <ion-item>
     <ion-label fixed>Middle Name</ion-label>
@@ -44,7 +45,7 @@
   <ion-datetime displayFormat="MMM DD YYYY" ></ion-datetime>
 </ion-item>
  
-<button ion-button>Submit</button>
+<button ion-button (click)="saveData()" >Submit</button>
 
 
 
